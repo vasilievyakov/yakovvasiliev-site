@@ -1,0 +1,58 @@
+
+:root {
+  --background: #f6f6f6;
+  --background-soft: #f0f0f0;
+  --text-main: #111111;
+  --text-muted: #4a4a4a;
+  --accent: #c3b091;
+  --accent-soft: #d7cba4;
+  --border-subtle: #e3e3e3;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, -system-ui,
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
+  --max-width: 1120px;
+  --radius-xl: 18px;
+  --radius-2xl: 24px;
+  --transition-soft: 200ms ease-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(195, 176, 145, 0.25);
+}
+
+/* Simple global fade-in for initial paint */
+body.ready {
+  opacity: 1;
+  transition: opacity 260ms ease-out;
+}

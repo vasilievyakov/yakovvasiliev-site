@@ -1,0 +1,46 @@
+
+.cta-button-root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 22px 11px;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease-out,
+    transform 180ms ease-out,
+    box-shadow 180ms ease-out,
+    color 180ms ease-out;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.cta-button-label {
+  transform: translateY(0.5px);
+}
+
+.cta-button-root:hover {
+  background-color: #181818;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.24);
+}
+
+.cta-button-root:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+  background-color: #050505;
+}
+
+@media (max-width: 768px) {
+  .cta-button-root {
+    padding: 9px 18px 10px;
+    font-size: 11px;
+    border-radius: 26px;
+  }
+}

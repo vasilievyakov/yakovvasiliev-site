@@ -1,0 +1,93 @@
+
+.clevel-root {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.clevel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.clevel-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+}
+
+.clevel-title {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.clevel-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 720px;
+}
+
+.clevel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.clevel-item {
+  padding-right: 4px;
+}
+
+.clevel-item-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.clevel-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.clevel-price {
+  align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #111111;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .clevel-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .clevel-price {
+    justify-self: flex-start;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 620px) {
+  .clevel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clevel-price {
+    justify-self: flex-start;
+  }
+}
