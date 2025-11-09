@@ -76,7 +76,6 @@ export const Formats: React.FC = () => {
           {formats.map((f) => (
             <div key={f.id} className="format-card">
               <div className="format-meta">
-                <div className="format-id">0{f.id}</div>
                 <h3 className="format-title">{f.title}</h3>
               </div>
               <div className="format-columns">
